@@ -1,14 +1,16 @@
-import "./Header.css"
+import React from "react";
+import "./Header.css";
 
-import img from "./images.jpg";
+import imagen from "./66133.jpg";
 
-const Header = (props) => {
-    
+import { Link } from "react-router-dom";
+
+const Header = () => {
   return (
     <div className="Header">
-        <img src={img} alt="logo" />
-        <h1>{props.title}</h1>
-        <h2>{props.subtitle}</h2>
+      <Link to="/">
+        <img src={imagen} alt="NASA logo" width={500} />
+      </Link>
     </div>
   );
 };
